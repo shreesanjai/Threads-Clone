@@ -8,7 +8,7 @@ export const metadata : Metadata = {
     description : 'A Next JS 13 Thread Project'
 
 }
-const inter = Inter({subsets:["latin"]});
+const inter = Inter({subsets:["latin"] , display:"optional"});
 
 export default function RootLayout({
     children

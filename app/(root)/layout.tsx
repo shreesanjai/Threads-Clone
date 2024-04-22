@@ -10,7 +10,7 @@ import RightSideBar from "@/components/shared/RightSideBar";
 import BottomBar from "@/components/shared/BottomBar";
 import { dark } from "@clerk/themes";
 
-const inter = Inter({ subsets: ["greek"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata : Metadata = {
   title:"Threads",
@@ -35,7 +35,7 @@ export default function RootLayout({
 
           <section className="main-container">
             
-            <div className="w-full max-w-xl">
+            <div className="w-full w-xl">
             {children}
             </div>
 
