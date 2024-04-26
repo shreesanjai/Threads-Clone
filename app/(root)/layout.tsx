@@ -36,7 +36,7 @@ export default function RootLayout({
           <section className="main-container">
             
             <div className="w-full w-xl">
-            {children}
+              {children}
             </div>
 
           </section>
