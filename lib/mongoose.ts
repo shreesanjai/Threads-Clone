@@ -4,6 +4,7 @@ let isConnected= false;
 export const connectToDB = async() => {
     
     mongoose.set('strictQuery',true);
+    mongoose.set('strictPopulate',true);
 
     if(!process.env.MONGO_URL) return console.log("MongoDB Not Connected");
 

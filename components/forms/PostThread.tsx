@@ -25,7 +25,7 @@ import { createThread } from "@/lib/actions/thread.actions";
 
 
 
-const PostThread = ({userId} : {userId : string}) => {
+const PostThread = ({ userId } : {userId : string}) => {
 
     const router = useRouter();
     const pathname = usePathname();
@@ -35,10 +35,14 @@ const PostThread = ({userId} : {userId : string}) => {
         resolver: zodResolver(threadValidation),
         defaultValues: {
             thread: "",
+            accountId : ""
         },
     });
 
     const onSubmit = async(values : z.infer<typeof threadValidation>) => {
+        
+        
+
         await createThread({
             text : values.thread,
             author : userId,
