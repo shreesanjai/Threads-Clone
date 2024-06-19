@@ -39,8 +39,7 @@ function ProfileHeader({
             </h2>
             <p className='text-base-medium text-gray-1'>@{username}</p>
           </div>
-        </div>
-        
+        </div>  
       </div>
 
       <p className='mt-6 max-w-lg text-base-regular text-light-2'>{bio}</p>
